@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Квадрат числа</title>
+</head>
+<body>
+    <h1>Введите число:</h1>
+    <form method="POST">
+        <input type="number" name="number" required>
+        <button type="submit">Вычислить квадрат</button>
+    </form>
+    {% if square %}
+        <h2>Квадрат числа {{ number }} равен {{ square }}</h2>
+    {% endif %}
+</body>
+</html>
